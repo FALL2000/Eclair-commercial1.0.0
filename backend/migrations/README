@@ -1,0 +1,8 @@
+Migrations Alembic.
+
+- Générer une migration : `alembic revision --autogenerate -m "message"`
+- Appliquer : `alembic upgrade head` (exécuté automatiquement par start.sh au démarrage du conteneur)
+
+Multi-tenant : les tables du schéma `public` et celles des schémas `tenant_xxx` seront migrées
+séparément (une migration tenant est rejouée sur chaque schéma `tenant_*`, et à la création
+d'une entreprise). Voir docs/SPECIFICATIONS_CONSOLIDEES.md §19.4.

@@ -1,0 +1,4 @@
+# Les scripts shell exécutés dans les conteneurs Linux doivent garder des fins de ligne LF
+*.sh text eol=lf
+Dockerfile text eol=lf
+nginx.conf text eol=lf

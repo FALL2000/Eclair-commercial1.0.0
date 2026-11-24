@@ -1,0 +1,9 @@
+# Dépendances de développement et de test (non installées dans l'image Docker)
+# -r : inclut toutes les dépendances de production
+# -c : impose les mêmes versions que requirements.txt (compiler requirements.in en premier)
+-r requirements.in
+-c requirements.txt
+pytest
+pytest-cov
+httpx
+pip-tools

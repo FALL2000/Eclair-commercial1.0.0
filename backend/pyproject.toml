@@ -1,0 +1,14 @@
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--cov=. --cov-report=term-missing --cov-report=xml --cov-fail-under=75"
+
+[tool.coverage.run]
+source = ["."]
+omit = [
+    "tests/*",
+    "migrations/*",
+    "venv/*",
+    ".venv/*",
+]

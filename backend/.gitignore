@@ -1,0 +1,18 @@
+#Virtual environment
+venv
+.venv
+
+#Fichier env
+.env
+
+#Cache python
+__pycache__
+.pytest_cache
+
+# Couverture de tests
+.coverage
+coverage.xml
+htmlcov/
+
+# Docker (Données persistantes)
+db_data/

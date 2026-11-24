@@ -1,0 +1,8 @@
+fastapi[standard]
+uvicorn[standard]
+pydantic-settings
+sqlmodel
+psycopg[binary]
+alembic
+pyJWT
+bcrypt
